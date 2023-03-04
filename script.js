@@ -11,8 +11,12 @@ keyItems.forEach(function (btn) {
       // avoid create zero before number
       result.innerHTML = "";
     }
-    if (!isFinite(result.innerHTML.charAt(0))) {
-      //avoid create operator at first character
+    if (
+      result.innerHTML.charAt(0) === "/" ||
+      result.innerHTML.charAt(0) === "*" ||
+      result.innerHTML.charAt(0) === "+"
+    ) {
+      //avoid create operator at first character, minus is the exception because it can be negative number
       result.innerHTML = "";
     }
     switch (btn.innerHTML) {
@@ -49,7 +53,7 @@ keyItems.forEach(function (btn) {
                 history_results.appendChild(historyItem);
                 historyItem.innerHTML = result.innerHTML;
                 currentValue = result.innerHTML;
-                result.innerHTML = eval(result.innerHTML);
+                result.innerHTML = eval(result.innerHTML).toPrecision(9);
               }
             } else {
               result.innerHTML = 0;
