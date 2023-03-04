@@ -53,7 +53,7 @@ keyItems.forEach(function (btn) {
                 history_results.appendChild(historyItem);
                 historyItem.innerHTML = result.innerHTML;
                 currentValue = result.innerHTML;
-                result.innerHTML = eval(result.innerHTML).toPrecision(9);
+                result.innerHTML = eval(result.innerHTML);
               }
             } else {
               result.innerHTML = 0;

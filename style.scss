@@ -41,9 +41,13 @@ body {
       .history {
         font-size: 40px;
         color: var(--dark-grey);
+        width: 100%;
+        text-align: end;
       }
       .history_results {
         height: 300px;
+        width: 100%;
+        overflow-x: auto;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;

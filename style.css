@@ -45,9 +45,13 @@ body .container .screen .result {
 body .container .screen .history {
   font-size: 40px;
   color: var(--dark-grey);
+  width: 100%;
+  text-align: end;
 }
 body .container .screen .history_results {
   height: 300px;
+  width: 100%;
+  overflow-x: auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
