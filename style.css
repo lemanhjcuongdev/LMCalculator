@@ -1,0 +1,95 @@
+* {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+body .container .screen {
+  position: relative;
+  border-bottom: 0.5px solid #eee;
+  padding: 10px;
+  margin-right: 10px;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  flex-direction: column;
+}
+body .container .screen .result {
+  font-size: 68px;
+  text-align: end;
+}
+body .container .screen .history {
+  font-size: 40px;
+  color: #888;
+}
+body .container .screen .history_results {
+  height: 300px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+body .container .keyboard {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  margin-top: 20px;
+}
+body .container .keyboard .zero {
+  grid-column: 1/3;
+}
+body .container .keyboard .zero button {
+  width: 100%;
+}
+body .container .keyboard div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+body .container .keyboard div button {
+  height: 70px;
+  padding: 10px;
+  min-width: 70px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-radius: 99px;
+  transition: 0.2s ease-in-out;
+  font-size: 32px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+body .container .keyboard div .operator {
+  color: #ff7433;
+}
+body .container .keyboard div button:hover {
+  background-color: #eee;
+}
+body .container .keyboard div button:active {
+  background-color: #ccc;
+}
+body .container .keyboard div .submit {
+  background-color: #ff7433;
+  color: white;
+}
+body .container .keyboard div .submit:hover {
+  background-color: rgba(255, 116, 51, 0.9529411765);
+}
+body .container .keyboard div .submit:active {
+  transform: scale(0.9);
+}/*# sourceMappingURL=style.css.map */
